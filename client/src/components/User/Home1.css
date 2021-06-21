@@ -1,0 +1,19 @@
+#welcome-card{
+    
+    min-height: 5vh;
+    width: 60%;
+    margin: auto;
+    margin-top: 2%;
+    padding: 1%;
+}
+#welcome-card > div > .welcome {
+    text-align: center;
+    font-size: 1.5rem;
+}
+#welcome-card > div >  .logout{
+    float: right;
+    margin-right: 5%;
+}
+#welcome-card > div >  .options{
+    margin-right: 5%;
+}

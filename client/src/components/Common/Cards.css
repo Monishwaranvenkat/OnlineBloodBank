@@ -1,0 +1,4 @@
+.cards-image{
+    height: 400px;
+    object-fit: contain !important;
+}

@@ -1,0 +1,295 @@
+{
+	"info": {
+		"_postman_id": "a7634bce-a346-4659-9f63-3628953d04f4",
+		"name": "BloodBank",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"user@gmail.com\",\r\n    \"password\":\"user\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"User\",\r\n   \"email\":\"user2@gmail.com\",\r\n    \"dob\":\"09-09-1999\",\r\n    \"phone\":\"9999999999\",\r\n    \"password\":\"user\",\r\n    \"bloodGroup\":\"b+\",\r\n    \"state\":\"TN\",\r\n    \"country\":\"ind\",\r\n    \"city\":\"cob\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/addAdmin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Admin\",\r\n   \"email\":\"admin@gmail.com\",\r\n    \"dob\":\"09-09-1999\",\r\n    \"phone\":\"9999999999\",\r\n    \"password\":\"admin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/addAdmin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"addAdmin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/blockUser?id=3",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBhZG1pbi5jb20iLCJleHAiOjE2MjI3NDU1MDMsImlhdCI6MTYyMjcwOTUwM30.jbTD6JjBWzJWO1qdVG4X2yzVglc5s-vW9YiHDykoosw",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/blockUser?id=3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"blockUser"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/unblockUser?id=1",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBhZG1pbi5jb20iLCJleHAiOjE2MjI4MjIyODEsImlhdCI6MTYyMjc4NjI4MX0.3eAAe1pIjjIHQHDkmhCW6Jb3dvjDAEjXJ-7oShyQyaU",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/unblockUser?id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"unblockUser"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/updateUser?id=2",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBhZG1pbi5jb20iLCJleHAiOjE2MjI4MjIyODEsImlhdCI6MTYyMjc4NjI4MX0.3eAAe1pIjjIHQHDkmhCW6Jb3dvjDAEjXJ-7oShyQyaU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"User\",\r\n   \"email\":\"user@gmail.com\",\r\n    \"dob\":\"09-09-1999\",\r\n    \"phone\":\"9638527417\",\r\n    \"password\":\"user\",\r\n    \"bloodGroup\":\"O+\",\r\n    \"state\":\"TamilNadu\",\r\n    \"city\":\"chennai\",\r\n    \"country\":\"India\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/updateUser?id=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"updateUser"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/deleteUser?id=2",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBhZG1pbi5jb20iLCJleHAiOjE2MjI4MjIyODEsImlhdCI6MTYyMjc4NjI4MX0.3eAAe1pIjjIHQHDkmhCW6Jb3dvjDAEjXJ-7oShyQyaU",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/deleteUser?id=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"deleteUser"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/getTotalByGroup?group=b%2b",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/getTotalByGroup?group=b%2b",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"getTotalByGroup"
+					],
+					"query": [
+						{
+							"key": "group",
+							"value": "b%2b"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/getBloodstotal",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/getBloodstotal",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"getBloodstotal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/getUsersByBloodGroup?group=b%2b",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/getUsersByBloodGroup?group=b%2b",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"getUsersByBloodGroup"
+					],
+					"query": [
+						{
+							"key": "group",
+							"value": "b%2b"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

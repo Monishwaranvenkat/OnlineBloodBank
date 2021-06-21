@@ -1,0 +1,12 @@
+
+.home-hero > img{
+    display: block;
+    margin: auto;
+    height: 20vh;
+}
+
+@media screen and  (max-width : 600px){
+    .home-hero > img{
+        width: 80vw;
+    }
+}
